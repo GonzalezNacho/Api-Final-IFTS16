@@ -1,2 +1,10 @@
-# Api-Final-IFTS16
-Api Rest con NodeJS para Ingeneria de software IFTS16
+# ifts16-simple-api-nodejs
+
+Simple Api NodeJS
+
+Inicializar un proyecto: npm init
+
+Agregar paquetes: npm install <package>
+
+npm install express http cors
+npm install nodemon -g
