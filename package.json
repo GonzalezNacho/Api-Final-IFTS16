@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AmonFla/ifts16-simple-api-nodejs.git"
+    "url": "git+https://github.com/GonzalezNacho/Api-Final-IFTS16.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AmonFla/ifts16-simple-api-nodejs/issues"
+    "url": "https://github.com/GonzalezNacho/Api-Final-IFTS16/issues"
   },
-  "homepage": "https://github.com/AmonFla/ifts16-simple-api-nodejs#readme",
+  "homepage": "https://github.com/GonzalezNacho/Api-Final-IFTS16s#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
