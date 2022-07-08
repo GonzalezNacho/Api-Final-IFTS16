@@ -1,16 +1,16 @@
-GET http://localhost:8000/objeto
+GET http://localhost:8000/movie
 
 ###
-GET http://localhost:8000/objeto/2365108b-7ed3-4ea2-a931-f46769e30417
+GET http://localhost:8000/movie/2365108b-7ed3-4ea2-a931-f46769e30417
 
 ###
-DELETE http://localhost:8000/objeto/2
+DELETE http://localhost:8000/movie/2
 
 ###
-GET http://localhost:8000/objeto/1
+GET http://localhost:8000/movie/1
 
 ###
-GET http://localhost:8000/objeto/az
+GET http://localhost:8000/movie/az
 
 ###
-GET http://localhost:8000/objeto/za
+GET http://localhost:8000/movie/za

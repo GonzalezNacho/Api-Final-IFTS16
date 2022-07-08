@@ -14,7 +14,7 @@ app.use(middleware.consoleData);
 app.use(middleware.processToken);
 
 app.use("/keepalive", keepaliveController);
-app.use("/objeto", entryController);
+app.use("/movie", entryController);
 app.use("/login", loginController);
 
 app.use(middleware.unknownEndpoint);
