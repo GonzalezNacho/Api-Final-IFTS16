@@ -9,6 +9,16 @@ router.get("/", (req, res) => {
   res.status(200).json(dao.getAll());
 });
 
+/*Obtener todo alfabeticamente*/
+router.get("/az", (req, res) => {
+  res.status(200).json(dao.getAllAlphabetically());
+});
+
+/*Obtener todo ordenado desde la z hasta la a*/
+router.get("/za", (req, res) => {
+  res.status(200).json(dao.getAllAlphabetically().reverse());
+});
+
 /* Obtener uno especifico */
 router.get("/:id", (req, res) => {
   const id = req.params.id;
