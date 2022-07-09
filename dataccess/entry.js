@@ -26,6 +26,48 @@ let Movies = [
       "director":"Steven Spielberg",
       "year":"1993",
       "rating":"9.4"
+  },
+  {
+      "id":"5",
+      "title":"Life Is Beautiful",
+      "director":"Roberto Benigni",
+      "year":"1997",
+      "rating":"8.9"
+  },
+  {
+      "id":"6",
+      "title":"Inception",
+      "director":"Christopher Nolan",
+      "year":"2010",
+      "rating":"8.4"
+  },
+  {
+      "id":"7",
+      "title":"Avengers: Endgame",
+      "director":"Anthony Russo, Joe Russo",
+      "year":"2019",
+      "rating":"7.3"
+  },
+  {
+      "id":"8",
+      "title":"Scarface",
+      "director":"Oliver Stone",
+      "year":"1983",
+      "rating":"8.6"
+  },
+  {
+      "id":"9",
+      "title":"Star Wars Episode IV - A New Hope",
+      "director":"George Lucas",
+      "year":"1977",
+      "rating":"7.9"
+  },
+  {
+      "id":"10",
+      "title":"The Godfather",
+      "director":"Francis Ford Coppola",
+      "year":"1972",
+      "rating":"9.2"
   }
 ];
 
