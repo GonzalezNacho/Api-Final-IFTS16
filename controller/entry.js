@@ -32,30 +32,15 @@ router.get("/:id", (req, res) => {
 });
 
 /* Agregar un elemento */
-/*
-// POST funcionando sin usuario logueado
-router.post("/", (req, res) => {
-  
-  const body = { ...req.body, id: uuidv4() };
-  dao.save(body);
-  res.status(200).json(body);
-});
-*/
 
-// POST funcionando con usuario logueado
 router.post("/", middleware.validarUserLogin, (req, res) => {
   
-  const body = {  id: uuidv4(), ...req.body/*, user: req.user */};
+  const body = {  id: uuidv4(), ...req.body};
   dao.save(body);
   res.status(200).json(body);
 });
 
 /* Borrar un elemento */
-/*router.delete("/:id", (req, res) => {
-  const id = req.params.id;
-  Entry = Entry.filter((registro) => registro.id != id);
-  res.sendStatus(201);
-});*/
 
 router.delete("/:id", (req, res) => {
   const id = req.params.id;  
