@@ -45,7 +45,7 @@ router.post("/", (req, res) => {
 // POST funcionando con usuario logueado
 router.post("/", middleware.validarUserLogin, (req, res) => {
   
-  const body = { ...req.body, id: uuidv4(), user: req.user };
+  const body = {  id: uuidv4(), ...req.body/*, user: req.user */};
   dao.save(body);
   res.status(200).json(body);
 });
