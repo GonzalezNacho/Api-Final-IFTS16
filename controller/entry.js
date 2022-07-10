@@ -19,6 +19,12 @@ router.get("/za", (req, res) => {
   res.status(200).json(dao.getAllAlphabetically().reverse());
 });
 
+/*Obtener todo alfabeticamente*/
+router.get("/destacados", (req, res) => {
+  res.status(200).json(dao.getDestacados());
+});
+
+
 /* Obtener uno especifico */
 router.get("/:id", (req, res) => {
   const id = req.params.id;

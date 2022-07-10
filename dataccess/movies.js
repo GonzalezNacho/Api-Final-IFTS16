@@ -75,6 +75,8 @@ const getAll = () => { return Movies };
 
 const getAllAlphabetically = () => { return Movies.sort((a, b) => a.title.localeCompare(b.title)) };
 
+const getDestacados = () => { return Movies.sort((a, b) => a.rating.localeCompare(b.rating)).reverse().slice(0,4) };
+
 const getOne = (id) => { return Movies.find((registro) => registro.id == id);}
 
 const save = (body) => { Movies.push(body);}
@@ -97,4 +99,4 @@ const update = (id) => {
   return false
 }
 
-module.exports = { getAll, getAllAlphabetically, getOne, save, borrar, update};
+module.exports = { getAll, getAllAlphabetically,getDestacados, getOne, save, borrar, update};
