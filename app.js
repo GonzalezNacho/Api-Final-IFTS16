@@ -3,6 +3,7 @@ const cors = require("cors");
 const middleware = require("./utils/middleware");
 const keepaliveController = require("./controller/keepalive");
 const entryController = require("./controller/entry");
+const entryControllerComments = require("./controller/entryComments");
 const loginController = require("./controller/login");
 
 const app = express();
@@ -15,6 +16,7 @@ app.use(middleware.processToken);
 
 app.use("/keepalive", keepaliveController);
 app.use("/movie", entryController);
+app.use("/comment", entryControllerComments);
 app.use("/login", loginController);
 
 app.use(middleware.unknownEndpoint);

@@ -2,40 +2,13 @@ const { v4: uuidv4 } = require("uuid");
 const middleware = require('../utils/middleware');
 
 const router = require("express").Router();
-let dao  = require("../dataccess/movies");
+let dao  = require("../dataccess/comments");
 
-/* Obtener todo */
+/* Obtener todo los comentarios */
 router.get("/", (req, res) => {
   res.status(200).json(dao.getAll(req.query));
 });
 
-/*Obtener todo alfabeticamente*/
-router.get("/az", (req, res) => {
-  res.status(200).json(dao.getAllAlphabetically());
-});
-
-/*Obtener todo ordenado desde la z hasta la a*/
-router.get("/za", (req, res) => {
-  res.status(200).json(dao.getAllAlphabetically().reverse());
-});
-
-/*Obtener los destacados*/
-router.get("/destacados", (req, res) => {
-  res.status(200).json(dao.getDestacados());
-});
-
-
-/* Obtener uno especifico */
-router.get("/:id", (req, res) => {
-  const id = req.params.id;
-  const data = dao.getOne(id);
-
-  if (data) {
-    res.status(200).json(data);
-  } else {
-    res.sendStatus(404);
-  }
-});
 
 /* Agregar un elemento */
 
