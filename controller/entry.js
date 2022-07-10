@@ -6,7 +6,7 @@ let dao  = require("../dataccess/movies");
 
 /* Obtener todo */
 router.get("/", (req, res) => {
-  res.status(200).json(dao.getAll());
+  res.status(200).json(dao.getAll(req.query));
 });
 
 /*Obtener todo alfabeticamente*/
