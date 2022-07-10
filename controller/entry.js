@@ -19,7 +19,7 @@ router.get("/za", (req, res) => {
   res.status(200).json(dao.getAllAlphabetically().reverse());
 });
 
-/*Obtener todo alfabeticamente*/
+/*Obtener los destacados*/
 router.get("/destacados", (req, res) => {
   res.status(200).json(dao.getDestacados());
 });

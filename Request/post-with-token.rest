@@ -16,5 +16,6 @@ Authorization: Bearer {{ login.response.body.token }}
   "title" : "Interstellar",
   "director": "Christopher Nolan",
   "year": "2014",
-  "rating": "8.2"
+  "rating": "8.2",
+  "genres": "Ciencia ficción"
 }

@@ -4,70 +4,80 @@ let Movies = [
       "title":"Alien",
       "director":"James Cameron",
       "year":"1986",
-      "rating":"8.5"
+      "rating":"8.5",
+      "genres":"Ciencia ficción"
   },
   {
       "id":"2",
       "title":"The Dark Knight",
       "director":"Cristopher Nolan",
       "year":"2008",
-      "rating":"9"
+      "rating":"9",
+      "genres":"Acción"
   },
   {
       "id":"3",
       "title":"Pulp Fiction",
       "director":"Quentin Tarantino",
       "year":"1994",
-      "rating":"8.6"
+      "rating":"8.6",
+      "genres":"Crimen / Drama"
   },
   {
       "id":"4",
       "title":"Schindler's List",
       "director":"Steven Spielberg",
       "year":"1993",
-      "rating":"9.4"
+      "rating":"9.4",
+      "genres":"Belico / Drama"
   },
   {
       "id":"5",
       "title":"Life Is Beautiful",
       "director":"Roberto Benigni",
       "year":"1997",
-      "rating":"8.9"
+      "rating":"8.9",
+      "genres":"Belico / Drama"
   },
   {
       "id":"6",
       "title":"Inception",
       "director":"Christopher Nolan",
       "year":"2010",
-      "rating":"8.4"
+      "rating":"8.4",
+      "genres":"Acción / Ciencia ficción"
   },
   {
       "id":"7",
       "title":"Avengers: Endgame",
       "director":"Anthony Russo, Joe Russo",
       "year":"2019",
-      "rating":"7.3"
+      "rating":"7.3",
+      "genres":"Acción / Ciencia ficción"
   },
   {
       "id":"8",
       "title":"Scarface",
       "director":"Oliver Stone",
       "year":"1983",
-      "rating":"8.6"
+      "rating":"8.6",
+      "genres":"Crimen / Drama"
   },
   {
       "id":"9",
       "title":"Star Wars Episode IV - A New Hope",
       "director":"George Lucas",
       "year":"1977",
-      "rating":"7.9"
+      "rating":"7.9",
+      "genres":"Ciencia ficción"
   },
   {
       "id":"10",
       "title":"The Godfather",
       "director":"Francis Ford Coppola",
       "year":"1972",
-      "rating":"9.2"
+      "rating":"9.2",
+      "genres":"Crimen / Drama"
   }
 ];
 
