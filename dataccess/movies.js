@@ -92,6 +92,10 @@ const getAll = (query) => {
     resultado = resultado.filter (e => e.genres.includes(query.genres))
   }
   
+  if(query.search){
+    resultado = resultado.filter(e => e.title.includes(resultado.search) || e.genres.includes(resultado.search) || e.director.includes(resultado.search))
+  }
+
   return resultado };
 
 const getAllAlphabetically = () => { return Movies.sort((a, b) => a.title.localeCompare(b.title)) };
