@@ -146,10 +146,10 @@ const borrar = (id) => {
   return false
 }
 
-const update = (id) => { 
+const update = (id,req) => { 
   const index = Comments.findIndex((registro) => registro.id == id);
   if (index >= 0) {
-    Comments[index] = req.body;
+    Comments[index] = req;
     return true
   } 
   return false

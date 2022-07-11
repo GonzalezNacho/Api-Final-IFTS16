@@ -21,7 +21,7 @@ router.post("/", middleware.validarUserLogin, (req, res) => {
 
 /* Borrar un elemento */
 
-router.delete("/:id", (req, res) => {
+router.delete("/:id",middleware.validarUserLogin, (req, res) => {
   const id = req.params.id;  
 
   if (dao.borrar(id)) { 
@@ -32,7 +32,7 @@ router.delete("/:id", (req, res) => {
 });
 
 /* Modificar un elemento */
-router.put("/:id", (req, res) => {
+router.put("/:id", middleware.validarUserLogin, (req, res) => {
   const id = req.params.id;
  
   if (dao.update(id, req.body) ) { 

@@ -115,10 +115,10 @@ const borrar = (id) => {
   return false
 }
 
-const update = (id) => { 
+const update = (id,req) => {
   const index = Movies.findIndex((registro) => registro.id == id);
   if (index >= 0) {
-    Movies[index] = req.body;
+    Movies[index] = req;
     return true
   } 
   return false

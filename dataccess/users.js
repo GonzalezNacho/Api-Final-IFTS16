@@ -65,10 +65,10 @@ let Users = [
     return false
   }
   
-  const update = (id) => { 
+  const update = (id,req) => { 
     const index = Users.findIndex((registro) => registro.id == id);
     if (index >= 0) {
-      Users[index] = req.body;
+      Users[index] = req;
       return true
     } 
     return false
