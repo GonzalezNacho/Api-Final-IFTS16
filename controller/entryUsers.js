@@ -1,4 +1,3 @@
-const { v4: uuidv4 } = require("uuid");
 const middleware = require('../utils/middleware');
 
 const router = require("express").Router();
@@ -14,9 +13,9 @@ router.get("/", (req, res) => {
 
 router.post("/", middleware.validarUserLogin, (req, res) => {
   
-  const body = {  id: uuidv4(), ...req.body};
-  dao.save(body);
-  res.status(200).json(body);
+  const body = { ...req.body};
+  const data = dao.save(body);
+  res.status(200).json(data);
 });
 
 /* Borrar un elemento */

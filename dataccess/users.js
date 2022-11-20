@@ -1,3 +1,4 @@
+const { v4: uuidv4 } = require("uuid");
 let Users = [
     {
         "id":"1",
@@ -54,7 +55,11 @@ let Users = [
     return resultado };
   
   
-  const save = (body) => { Users.push(body);}
+  const save = (body) => { 
+    const data = {id: uuidv4(), ...body }
+    Users.push(data);
+    return data;
+  }
   
   const borrar = (id) => {
     const index = Users.findIndex((registro) => registro.id == id);

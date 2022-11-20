@@ -1,3 +1,4 @@
+const { v4: uuidv4 } = require("uuid");
 let Comments = [
   {
       "id":"1",
@@ -135,7 +136,11 @@ const getAll = (query) => {
   return resultado };
 
 
-const save = (body) => { Comments.push(body);}
+const save = (body) => { 
+    const data = {id: uuidv4(), ...body};
+    Comments.push(data);
+    return data;
+}
 
 const borrar = (id) => {
   const index = Comments.findIndex((registro) => registro.id == id);

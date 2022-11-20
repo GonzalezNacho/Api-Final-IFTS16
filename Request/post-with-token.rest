@@ -37,3 +37,7 @@ Authorization: Bearer {{ login.response.body.token }}
 ####
 
 GET http://127.0.0.1:8000/movie/2
+
+
+###
+GET http://127.0.0.1:8000/movie/226869c8-aeb2-4992-8540-a714a65caaa8

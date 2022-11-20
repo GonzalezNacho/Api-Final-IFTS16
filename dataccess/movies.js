@@ -1,3 +1,4 @@
+const { v4: uuidv4 } = require("uuid");
 let Movies = [
   {
       "id":"1",
@@ -104,7 +105,11 @@ const getDestacados = () => { return Movies.sort((a, b) => a.rating - b.rating).
 
 const getOne = (id) => { return Movies.find((registro) => registro.id == id);}
 
-const save = (body) => { Movies.push(body);}
+const save = (body) => { 
+  const data = {id: uuidv4(), ...body};
+  Movies.push(data);
+  return data;
+}
 
 const borrar = (id) => {
   const index = Movies.findIndex((registro) => registro.id == id);
